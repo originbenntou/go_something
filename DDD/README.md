@@ -1,5 +1,11 @@
 # ドメイン設計
 
+## TODO
+
+- graphqlからgrpc-clientを呼ぶのか？
+    - だとしたらそれはDDDのどれにあたるのか？
+- それともgraphql自体がinterfaceなのか？
+
 レイヤードアーキテクチャ
 
 ```
