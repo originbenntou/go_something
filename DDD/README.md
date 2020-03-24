@@ -2,6 +2,7 @@
 
 レイヤードアーキテクチャ
 
+```
 .
 ├── README.md
 ├── account
@@ -46,3 +47,4 @@
     └── account
         ├── account.pb.go
         └── account.proto
+```
