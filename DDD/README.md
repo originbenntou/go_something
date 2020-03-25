@@ -1,11 +1,5 @@
 # ドメイン設計
 
-## TODO
-
-- graphqlからgrpc-clientを呼ぶのか？
-    - だとしたらそれはDDDのどれにあたるのか？
-- それともgraphql自体がinterfaceなのか？
-
 レイヤードアーキテクチャ
 
 ```
@@ -27,13 +21,15 @@
 │   │   └── persistence
 │   │       └── datastore
 │   │           └── xxx_repository.go
-│   ├── interfaces
+│   ├── interfaces <- 再構成
+│   │   └── middleware.go
 │   ├── main.go
 │   └── registry
+│       └── registry.go
 ├── docker-compose.yml
 ├── go.mod
-├── graphql
-│   ├── generated.go
+├── graphql <- 再構成
+│   ├── generated.go
 │   ├── gqlgen.yml
 │   ├── graph.go
 │   ├── main.go
